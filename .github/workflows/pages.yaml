@@ -2,7 +2,7 @@ name: Build and deploy Jekyll site to Pages
 
 on:
   push:
-    branches: [ main ]   # or your default branch
+    branches: [ main ]       # or your default branch
   workflow_dispatch:
 
 permissions:
@@ -20,6 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # REQUIRED: configures the Pages deployment
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
@@ -33,14 +37,13 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          # IMPORTANT: paths are relative to repo root
-          source: ./jekyll-site
-          destination: ./_site
+          source: ./jekyll-site       # your site lives here
+          destination: ./_site        # output for upload
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: ./_site               # artifact name defaults to github-pages
 
   deploy:
     needs: build
