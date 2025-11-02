@@ -36,6 +36,26 @@ with one base). Examples:
 - `et` — Eurotransplant antigen/match determinant tables.
 - `nmdp` — registry codes (including MACs), aligned to specific IMGT/HLA releases.
 
+## Gene family namespace    {#namespace}
+
+Each gene family namespace represents one or more code systems.  When more than one code system is used, a base system is designated which is then extended by the other code systems.
+
+<table style="border: 0px">
+  <tbody>
+    <tr>
+      <td style="border: 0px; vertical-align: middle;" width="36%" markdown="span">![Code Systems Comprising hla Namespace](/assets/images/image.png){:height="230px" width="230px"}</td>
+      <td style="border: 0px; vertical-align: middle;" markdown="span">
+        - `hla` — **Base**: IPD-IMGT/HLA release; **Extensions**: WHO antigen names,
+        NMDP MAC codes for ambiguity, and other well-documented, versioned tables.
+        - `optn` — OPTN antigen/epitope codes used in U.S. allocation workflows.
+        - `et` — Eurotransplant antigen/match determinant tables.
+        - `nmdp` — registry codes (including MACs), aligned to specific IMGT/HLA releases.
+
+        </td>
+    </tr>
+  </tbody>
+</table>
+
 **Rules**
 
 - A PLSC **must** specify exactly one namespace and one version (or date).
