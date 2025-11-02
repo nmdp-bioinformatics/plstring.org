@@ -101,7 +101,7 @@ See the **Syntax** page for complete operator rules, constraints, and examples.
 
 ## Links
 
-- **Syntax (PLSC 1.0)**: [PLSC Syntax & Operators]({{ '/syntax-1.0.html' | relative_url }})
+- **Syntax (PLSC 1.0)**: [PLSC Syntax & Operators]({{/syntax-1.0.html | relative_url }})
 - GL-String background: Milius et al., 2013; Mack et al., 2023
 - IMGT/HLA database: Barker et al., 2023
 
