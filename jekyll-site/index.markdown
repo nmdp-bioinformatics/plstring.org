@@ -36,6 +36,7 @@ respective authorities.
 
 Use PL-String when you need a lossless, computable representation of:
 
+[PLSC 1.0 Syntax]({{ '/syntax-1.0.html/' | relative_url }})
 1. **Reagents**: The phenotypic composition of materials used in an assay  
    (e.g., “proteins present on a bead” or “heterodimer pairs used in class II
    reagents”).
