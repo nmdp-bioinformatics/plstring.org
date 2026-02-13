@@ -103,7 +103,7 @@ does **not** carry chromosomal phase, zygosity, or locus order.
 
 **Reagent (protein ambiguity on a bead)**  
 `HLA-A*01:01/HLA-A*01:02+HLA-A*02:01`  
-> A*02:01 is present; A*01:01 or A*01:02 (but not both) is present.
+> `A*02:01` is present; `A*01:01` or `A*01:02` (but not both) is present.
 
 **Result (antigen-level inclusive ambiguity)**  
 `A0101%A0102+A2402`  
@@ -115,11 +115,11 @@ does **not** carry chromosomal phase, zygosity, or locus order.
 
 **Constrained heterodimer variants**  
 `HLA-DPA1*01:04~HLA-DPB1*02:01%HLA-DPA1*01:04~HLA-DPB1*04:02`  
-> One or two heterodimers; DPA1*01:04 is always present.
+> One or two heterodimers; `DPA1*01:04` is always present.
 
 **Multiple loci (phenotype list)**  
 `HLA-A*01:02+HLA-A*02:01+HLA-B*07:02`  
-> A01:02, A02:01, and B07:02 present.
+> `A*01:02`, `A*02:01`, and `B*07:02` present.
 
 > Implementations should reject invalid pairs like `DQA1*05:01~DPB1*04:02` based
 > on namespace pairing rules.
