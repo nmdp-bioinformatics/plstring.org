@@ -80,7 +80,7 @@ A PLSC binds a PL-String to its vocabulary context:
 <namespace>#<version or date>#<pl-string>
 ```
 
-- `<namespace>`: e.g., `hla`, `optn`, `et`, `nmdp`
+- `<namespace>`: e.g., `who`, `optn`, `et`, `nmdp`
 - `<version or date>`: a release like `3.61.0`, or an ISO date `2025-11-02`
   (when a release tag is not applicable)
 - `<pl-string>`: the actual PL-String expression

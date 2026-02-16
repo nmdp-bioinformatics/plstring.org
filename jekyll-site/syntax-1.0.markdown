@@ -16,7 +16,7 @@ traceable.
 <namespace>#<version or date>#<pl-string>
 ```
 
-- **Namespace** — who defines the vocabulary (e.g., `hla`, `optn`, `et`, `nmdp`)
+- **Namespace** — who defines the vocabulary (e.g., `who`, `optn`, `et`, `nmdp`)
 - **Version or date** — a release tag (preferred) or ISO date (YYYY-MM-DD)
 - **PL-String** — a phenotype expression using the operators below
 
@@ -30,7 +30,7 @@ traceable.
 A namespace represents a governed, versioned code system (or a set of systems
 with one base). Examples:
 
-- `hla` — **Base**: IPD-IMGT/HLA release; **Extensions**: WHO antigen names, NMDP MAC codes for ambiguity, and other well-documented, versioned tables.
+- `who` — **Base**: IPD-IMGT/HLA release; **Extensions**: WHO antigen names, NMDP MAC codes for ambiguity, and other well-documented, versioned tables.
 - `optn` — OPTN antigen/epitope codes used in U.S. allocation workflows.
 - `et` — Eurotransplant antigen/match determinant tables.
 - `nmdp` — registry codes (including MACs), aligned to specific IMGT/HLA releases.
@@ -42,9 +42,9 @@ Each gene family namespace represents one or more code systems.  When more than 
 <table style="border: 0px">
   <tbody>
     <tr>
-      <td style="border: 0px; vertical-align: middle;" width="36%" markdown="span">![Code Systems Comprising hla Namespace](assets/images/image.png){:height="230px" width="230px"}</td>
+      <td style="border: 0px; vertical-align: middle;" width="36%" markdown="span">![Code Systems Comprising who Namespace](assets/images/image.png){:height="230px" width="230px"}</td>
       <td style="border: 0px; vertical-align: middle;" markdown="span">
-        - `hla` — **Base**: IPD-IMGT/HLA release; **Extensions**: WHO antigen names,
+        - `who` — **Base**: IPD-IMGT/HLA release; **Extensions**: WHO antigen names,
         NMDP MAC codes for ambiguity, and other well-documented, versioned tables.
         - `optn` — OPTN antigen/epitope codes used in U.S. allocation workflows.
         - `et` — Eurotransplant antigen/match determinant tables.
@@ -140,9 +140,9 @@ the **reagent/result/interpretation** was produced—not sample collection/expor
 ### 4.1 Examples
 
 - IPD-IMGT/HLA release bound protein list:  
-  `hla#3.61.0#HLA-A*01:01/HLA-A*01:02+HLA-A*24:02`
+  `who#3.61.0#HLA-A*01:01/HLA-A*01:02+HLA-A*24:02`
 - Class II heterodimers with antigen mapping:  
-  `hla#2025-11-02#DQA1*05:01~DQB1*02:01%DPA1*01:03~DPB1*04:02`
+  `who#2025-11-02#DQA1*05:01~DQB1*02:01%DPA1*01:03~DPB1*04:02`
 - Ambiguous MAC usage (namespace-governed):  
   `nmdp#2025-11-02#HLA-DQB1*03:01/297+HLA-DQB1*06:02`
 
@@ -174,7 +174,7 @@ the **reagent/result/interpretation** was produced—not sample collection/expor
   <coding>
     <system value="http://plstring.org"/>
     <version value="1.0"/>
-    <code value="hla#3.61.0#HLA-DQA1*05:01~HLA-DQB1*02:01+HLA-DPB1*04:01"/>
+    <code value="who#3.61.0#HLA-DQA1*05:01~HLA-DQB1*02:01+HLA-DPB1*04:01"/>
   </coding>
 </valueCodeableConcept>
 ```
