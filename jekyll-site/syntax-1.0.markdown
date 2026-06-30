@@ -8,7 +8,7 @@ permalink: /syntax-1.0.html
 
 ## 1. What is PLSC?
 
-**Phenotype List String Code (PLSC)** pairs a PL-String with its **namespace**
+**Phenotype List String Code (PLSC)** pairs a PL String with its **namespace**
 and **version (or date)** so that every expression is self-contained and
 traceable.
 
@@ -18,7 +18,7 @@ traceable.
 
 - **Namespace** — who defines the vocabulary (e.g., `who`, `optn`, `et`, `nmdp`)
 - **Version or date** — a release tag (preferred) or ISO date (YYYY-MM-DD)
-- **PL-String** — a phenotype expression using the operators below
+- **PL String** — a phenotype expression using the operators below
 
 > Use a **release version** when available (e.g., `3.61.0`). If not, use the
 > **date** the reagent/result/interpretation was produced.
@@ -58,15 +58,15 @@ Each gene family namespace represents one or more code systems.  When more than 
 **Rules**
 
 - A PLSC **must** specify exactly one namespace and one version (or date).
-- **No mixing** of namespaces within a single PL-String.
+- **No mixing** of namespaces within a single PL String.
 - Each implementation should publish its governance, release process, and
   documentation for users.
 
 ---
 
-## 3. PL-String grammar
+## 3. PL String grammar
 
-PL-String encodes **phenotypes** (not genotypes). It represents the presence or
+PL String encodes **phenotypes** (not genotypes). It represents the presence or
 possible presence of proteins/antigens and heterodimer pairing for class II. It
 does **not** carry chromosomal phase, zygosity, or locus order.
 
@@ -87,7 +87,7 @@ does **not** carry chromosomal phase, zygosity, or locus order.
 
 ### 3.2 Basic rules
 
-- **No loci/phase semantics**: PL-Strings do not assert chromosomal phase,
+- **No loci/phase semantics**: PL Strings do not assert chromosomal phase,
   cis/trans, zygosity, or locus order; `DPA1*01:04~DPB1*02:02` is equivalent to
   `DPB1*02:02~DPA1*01:04`.
 - **Slash locus constraint**: Terms on either side of `/` must be the **same
@@ -96,7 +96,7 @@ does **not** carry chromosomal phase, zygosity, or locus order.
 - **Heterodimers**: `~` may only connect permitted α~β pairs as defined by the
   namespace (e.g., `DQA1~DQB1`, `DPA1~DPB1`, `DRA~DRB3/4/5` or their antigen
   equivalents).
-- **No mixed namespaces** inside a single PL-String.
+- **No mixed namespaces** inside a single PL String.
 - **Whitespace** is not significant; implementers should normalize.
 
 ### 3.3 Examples
@@ -183,7 +183,7 @@ the **reagent/result/interpretation** was produced—not sample collection/expor
 
 ## 7. Comparison to GL-String (at a glance)
 
-| Concept            | GL-String (genotype)                 | PL-String (phenotype)                               |
+| Concept            | GL-String (genotype)                 | PL String (phenotype)                               |
 |-------------------|--------------------------------------|-----------------------------------------------------|
 | Focus             | Alleles/genotypes & phase            | Proteins/antigens & heterodimers                    |
 | Locus delimiter   | `^`, `|`, `?` (various)              | *Not used*                                          |
@@ -191,7 +191,7 @@ the **reagent/result/interpretation** was produced—not sample collection/expor
 | Inclusive OR      | (N/A)                                | `%` at **antigen** level                            |
 | Heterodimer       | `~` for **phase**                    | `~` for **α~β pairing** (class II)                  |
 | Composition       | `+`                                  | `+` (reagent contents; multi-reactivity)            |
-| Mix namespaces    | Allowed per implementer              | **Disallowed within a single PL-String**            |
+| Mix namespaces    | Allowed per implementer              | **Disallowed within a single PL String**            |
 
 ---
 
