@@ -86,7 +86,7 @@ A PLSC binds a PL-String to its vocabulary context:
 - `<pl-string>`: the actual PL-String expression
 
 **Example:**  
-`hla#3.61.0#HLA-DQA1*05:01~HLA-DQB1*02:01+HLA-DPB1*04:01`
+`who#3.61.0#HLA-DQA1*05:01~HLA-DQB1*02:01+HLA-DPB1*04:01`
 
 See the **Syntax** page for complete operator rules, constraints, and examples.
 
